@@ -1,0 +1,35 @@
+apiVersion: projectcalico.org/v3
+kind: BGPPeer
+metadata:
+  name: rack-1
+spec:
+  nodeSelector: rack == 'rack-1'
+  peerIP: 172.16.1.1
+  asNumber: 4200000001
+---
+apiVersion: projectcalico.org/v3
+kind: BGPPeer
+metadata:
+  name: rack-2
+spec:
+  nodeSelector: rack == 'rack-2'
+  peerIP: 172.16.2.1
+  asNumber: 4200000002
+---
+apiVersion: projectcalico.org/v3
+kind: BGPPeer
+metadata:
+  name: rack-3
+spec:
+  nodeSelector: rack == 'rack-3'
+  peerIP: 172.16.3.1
+  asNumber: 4200000003
+---
+apiVersion: projectcalico.org/v3
+kind: BGPPeer
+metadata:
+  name: rack-4
+spec:
+  nodeSelector: rack == 'rack-4'
+  peerIP: 172.16.4.1
+  asNumber: 4200000004
