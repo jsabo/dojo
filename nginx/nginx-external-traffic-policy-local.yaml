@@ -7,11 +7,11 @@ metadata:
     service: nginx-np
 spec:
   ports:
-  - nodePort: 30480
+  - nodePort: 30481
     port: 80
     targetPort: 80
     protocol: TCP
   selector:
     app: nginx
   type: NodePort
-  #externalTrafficPolicy: Local
+  externalTrafficPolicy: Local

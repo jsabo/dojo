@@ -8,6 +8,6 @@ spec:
   serviceClusterIPs:
   - cidr: 10.49.0.0/16
   serviceExternalIPs:
-  - cidr: 7.7.7.7/32
+  - cidr: 10.99.0.0/16
   serviceLoadBalancerIPs:
-  - cidr: 6.6.6.6/32
+  - cidr: 10.100.0.0/16
