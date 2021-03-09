@@ -7,3 +7,7 @@ spec:
   nodeToNodeMeshEnabled: false
   serviceClusterIPs:
   - cidr: 10.49.0.0/16
+  serviceExternalIPs:
+  - cidr: 7.7.7.7/32
+  serviceLoadBalancerIPs:
+  - cidr: 6.6.6.6/32

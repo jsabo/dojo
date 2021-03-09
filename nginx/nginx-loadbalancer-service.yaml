@@ -1,0 +1,21 @@
+## https://kubernetes.io/docs/concepts/services-networking/service/#loadbalancer
+## https://docs.tigera.io/networking/advertise-service-ips#advertise-service-load-balancer-ip-addresses
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-lb
+  labels:
+    service: nginx-lb
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 80
+    targetPort: 80
+    protocol: TCP
+  selector:
+    app: nginx
+status:
+  loadBalancer:
+    ingress:
+    - ip: 6.6.6.6

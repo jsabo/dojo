@@ -1,0 +1,18 @@
+## https://kubernetes.io/docs/concepts/services-networking/service/#external-ips
+## https://docs.tigera.io/networking/advertise-service-ips#advertise-service-external-ip-addresses
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-ext-ip
+  labels:
+    service: nginx-ext-ip
+spec:
+  ports:
+  - port: 80
+    targetPort: 80
+    protocol: TCP
+  selector:
+    app: nginx
+  externalIPs:
+    - 7.7.7.7
