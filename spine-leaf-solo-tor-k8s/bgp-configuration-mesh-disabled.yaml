@@ -4,4 +4,4 @@ metadata:
   name: default
 spec:
   logSeverityScreen: Info
-  nodeToNodeMeshEnabled: true
+  nodeToNodeMeshEnabled: false
