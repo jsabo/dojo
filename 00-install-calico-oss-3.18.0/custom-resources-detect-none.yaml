@@ -37,7 +37,4 @@ spec:
       encapsulation: IPIP
       natOutgoing: Enabled
       nodeSelector: "!all()"
-    nodeAddressAutodetectionV4:
-      cidrs:
-      - 172.16.0.0/16
   registry: reg.calico.fun:5000
