@@ -2,9 +2,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: nginx-np
+  name: nginx-np-ext-traf-pol-local
   labels:
-    service: nginx-np
+    service: nginx-np-ext-traf-pol-local
 spec:
   ports:
   - nodePort: 30481
