@@ -12,29 +12,4 @@ spec:
       encapsulation: IPIP
       natOutgoing: Enabled
       nodeSelector: all()
-    - blockSize: 26
-      cidr: 10.48.8.0/21
-      encapsulation: IPIP
-      natOutgoing: Enabled
-      nodeSelector: all()
-    - blockSize: 26
-      cidr: 10.48.16.0/21
-      encapsulation: IPIP
-      natOutgoing: Enabled
-      nodeSelector: "!all()"
-    - blockSize: 26
-      cidr: 10.48.24.0/21
-      encapsulation: IPIP
-      natOutgoing: Enabled
-      nodeSelector: "!all()"
-    - blockSize: 26
-      cidr: 10.48.32.0/21
-      encapsulation: IPIP
-      natOutgoing: Enabled
-      nodeSelector: "!all()"
-    - blockSize: 26
-      cidr: 10.48.40.0/21
-      encapsulation: IPIP
-      natOutgoing: Enabled
-      nodeSelector: "!all()"
   registry: reg.calico.fun:5000
